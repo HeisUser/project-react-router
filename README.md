@@ -1,5 +1,15 @@
-# React + Vite
+# Ways (Methods) of Routing in React Router v6
+#### Learning and Know how the Routing Methods and Param Route with JSON Server
 
+## Github Link regard this Branch on _Routing-Methods-JSON-Param_
+- **SSH** ```git@github.com:HeisUser/project-react-router.git```
+- **HTTPS** https://github.com/HeisUser/project-react-router.git
+
+## To Make Connection of JSON Server
+$ json-server -p 4000 -w ./data/db.json 
+
+
+# Default Created of React Router v6
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
