@@ -1,7 +1,10 @@
 # Ways (Methods) of Routing in React Router v6
 #### Learning and Know how the Routing Methods and Param Route with JSON Server
 
-## Github Link regard this Branch on _Routing-Methods-JSON-Param_
+## Learning Object
+Route and Redirect with Non-Id of JSON Object (Traditional Method)
+
+## Github Link regard this Branch on _Non-Id-Route-JSON-Param_
 - **SSH** ```git@github.com:HeisUser/project-react-router.git```
 - **HTTPS** https://github.com/HeisUser/project-react-router.git
 
