@@ -37,8 +37,9 @@ export const CareerDetailsLoader = async({ params }) => {
         career => career.salary.toString() === salary
     );
   
+    // Error will be throw to CareersError.jsx by useRouteError hook
     if (!career) {
-      throw new Error("Career not found");
+      throw new Error("Error : Career not found");
     }
   
     return career;
