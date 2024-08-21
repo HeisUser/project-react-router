@@ -2,26 +2,14 @@ import { Link, useLoaderData } from "react-router-dom"
 
 export default function Careers() {
   const careers = useLoaderData();
+  console.log('Careers useLoaderData careers ' + careers);
 
-  /*
-  return (
-    <div className="careers">
-      {careers.map(career => (
-        
-        <Link to='/' key={career.id}>
-          <p>{career.title}</p>
-          <p>Based in {career.location}</p>
-        </Link>
-      ))}
-    </div>
-  )
-  */
 
   return (
     <div className="careers">
       {careers.map(career => (
         
-        <Link to={career.id.toString()} key={career.id}>
+        <Link to={career.salary.toString()} key={career.salary}>
           <p>{career.title}</p>
           <p>Based in {career.location}</p>
         </Link>

@@ -1,20 +1,12 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 
 export default function CareerDetails(){
-    const { id } = useParams();
-    console.log(id);
+    const { salary } = useParams();
+    console.log('CareerDetails useParams salary ' + salary);
 
     const careerData = useLoaderData();
-    console.log(careerData);
+    console.log('CareerDetails useLoaderData careerData ' + careerData);
 
-    // Determine the output result
-    /* 
-    return (
-        <div className='career-details'>
-            <h2>{ id }</h2>
-        </div>
-    );
-    */
 
     return (
         <div className="career-details">
@@ -31,11 +23,23 @@ export default function CareerDetails(){
 }
 
 // Loader Function
+// Retrieve Data with String "salary" from JSON Object
 export const CareerDetailsLoader = async({ params }) => {
-    const { id } = params;
-    console.log(id);
+    const { salary } = params;
+    console.log('CareerDetailsLoader salary ' + salary);
 
-    const res = await fetch('http://localhost:4000/careers_json_object'+ '/' + id);
-    console.log(res);
-    return res.json();
+    const res = await fetch('http://localhost:4000/careers_json_object'+ '/');
+    console.log('CareerDetailsLoader res ' + res);
+    const careers = await res.json();
+
+    // Find the career with the matching salary
+    const career = careers.find(
+        career => career.salary.toString() === salary
+    );
+  
+    if (!career) {
+      throw new Error("Career not found");
+    }
+  
+    return career;
 }
