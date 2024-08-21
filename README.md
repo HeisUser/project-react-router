@@ -9,7 +9,7 @@ Learn how to Handling Error on Routing
 - **HTTPS** https://github.com/HeisUser/project-react-router.git
 
 ## To Make Connection of JSON Server
-$ json-server -p 4000 -w ./data/db.json 
+$ json-server -p 4000 -w ./data/db.json
 
 
 # Default Created of React Router v6
