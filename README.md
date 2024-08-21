@@ -2,7 +2,7 @@
 #### Learning and Know how the Routing Methods and Param Route with JSON Server
 
 ## Learning Object
-Route and Redirect with Non-Id of JSON Object (Traditional Method)
+Learn how to Handling Error on Routing
 
 ## Github Link regard this Branch on _Non-Id-Route-JSON-Param_
 - **SSH** ```git@github.com:HeisUser/project-react-router.git```
