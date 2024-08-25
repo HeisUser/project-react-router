@@ -16,6 +16,13 @@ import CareersError from './pages/careers/CareersError';
 import NotFoundPage from './pages/NotFound';
 
 
+// Destructuring Json Examples
+import DesctructuringLayout from './OutletLayouts/DestructuringLayout';
+import DestructuringJson_Basic, { careerLoader } from './pages/destructuring/DestructuringJson_Basic';
+import DestructuringJson_Nested, { tableLoader } from './pages/destructuring/DestructuringJson_nested';
+import DestructuringJson from './pages/destructuring/DestructuringJson_Theory';
+
+
 // Define the router
 const router = createBrowserRouter([
     {
@@ -58,10 +65,32 @@ const router = createBrowserRouter([
                     {
                         path: ":salary",
                         element: <CareerDetails />,
-                        loader: CareerDetailsLoader
+                        loader: CareerDetailsLoader,
+                    },
+                ],
+            },
+            {
+                path: "json",    // Second Layer of Parent (Layout) with Children
+                element: <DesctructuringLayout />,
+                errorElement: <CareersError />, // errorElement can be replaced with Parent Layer
+                children: [
+                    {
+                        path: ":salary",
+                        element: <DestructuringJson_Basic />,
+                        loader: careerLoader,
+                    },
+                    {
+                        path: "table/:sku",
+                        element: <DestructuringJson_Nested />,
+                        loader: tableLoader,
+                    },
+                    {
+                        path: 'theory',
+                        element: <DestructuringJson />,
                     }
                 ],
             },
+            
             {
                 path: "*",
                 element: <NotFoundPage />,

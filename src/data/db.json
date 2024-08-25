@@ -1,23 +1,86 @@
 {
-    "careers_json_object" : [
-        {
+    "careers_json_object": [
+      {
+        "id": "1",
+        "name": "John Doe",
+        "title": "Senior React Developer",
+        "salary": "50000",
+        "location": "London, UK",
+        "__comment": "start your with 'json-server -p 4000 -w ./db.json'"
+      },
+      {
+        "id": "2",
+        "name": "Peter Lynch",
+        "title": "Plumber",
+        "salary": "30000",
+        "location": "Browser's Castle"
+      },
+      {
+        "id": "3",
+        "name": "Michael Joe",
+        "title": "Gym Leader",
+        "salary": "85000",
+        "location": "Kanto Region"
+      }
+    ],
+
+    "data_object": {
+      "diningTables": {
+        "data": [
+          {
             "id": "1",
-            "title": "Senior React Developer",
-            "salary": "50000",
-            "location": "London, UK",
-            "__comment": "start your with 'json-server -p 4000 -w ./db.json'"
-        },
-        {
+            "attributes": {
+              "sku": "bilibala_ocean",
+              "description": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Dining Table Ocean series",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ],
+              "images": {
+                "data": [
+                  {
+                    "attributes": {
+                      "url": "/uploads/Screenshot_2024_08_11_at_18_24_38_ee99805c61.png"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
             "id": "2",
-            "title": "Plumber",
-            "salary": 30000,
-            "location": "Browser's Castle"
-        },
-        {
-            "id": "3",
-            "title": "Gym Leader",
-            "salary": 85000,
-            "location": "Kanto Region"
-        }
-    ]
+            "attributes": {
+              "sku": "valavili_dessert",
+              "description": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Dessert series of Dining Table",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ],
+              "images": {
+                "data": [
+                  {
+                    "attributes": {
+                      "url": "/uploads/Screenshot_2024_08_11_at_18_31_20_6194fd4ce2.png"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
 }
+  

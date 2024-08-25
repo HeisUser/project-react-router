@@ -1,15 +1,32 @@
 # Ways (Methods) of Routing in React Router v6
 #### Learning and Know how the Routing Methods and Param Route with JSON Server
 
+
 ## Learning Object
-Learn how to Handling Error on Routing
+Access & Handling Destructuring JSON Object in Basis, Nested-Basis & Nested-Complex
+
+
+## Regarding Files at ./pages/destructuring/.. as
+- Handling the Basis to Nested-Complex **DestructuringJson_Theory.jsx**
+- Basic Handling via JSON-Server **DestructuringJson_Basic.jsx**
+- Complex Handling via JSON-Server **DestructuringJson_Nested.jsx**
+
+
+## Usage
+#### Route Definition of URL Link created at DataRoutes.jsx file
+- http://localhost:5174/json/theory
+
 
 ## Github Link regard this Branch on _Non-Id-Route-JSON-Param_
 - **SSH** ```git@github.com:HeisUser/project-react-router.git```
 - **HTTPS** https://github.com/HeisUser/project-react-router.git
 
 ## To Make Connection of JSON Server
-$ json-server -p 4000 -w ./data/db.json
+#### $ json-server -p 4000 -w ./data/db.json
+
+# Endpoints:
+http://localhost:4000/careers_json_object
+http://localhost:4000/data_object
 
 
 # Default Created of React Router v6

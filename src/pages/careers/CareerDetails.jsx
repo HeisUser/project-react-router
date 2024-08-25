@@ -23,14 +23,16 @@ export default function CareerDetails(){
 }
 
 // Loader Function
-// Retrieve Data with String "salary" from JSON Object
+// Retrieve Data with String "salary" from JSON Object by Destructuring
 export const CareerDetailsLoader = async({ params }) => {
     const { salary } = params;
     console.log('CareerDetailsLoader salary ' + salary);
 
     const res = await fetch('http://localhost:4000/careers_json_object'+ '/');
     console.log('CareerDetailsLoader res ' + res);
+    
     const careers = await res.json();
+    console.log('career : ' + careers)
 
     // Find the career with the matching salary
     const career = careers.find(

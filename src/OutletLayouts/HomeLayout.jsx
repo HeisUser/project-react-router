@@ -20,6 +20,7 @@ export default function HomeLayout() {
           <NavLink to="about">About</NavLink>
           <NavLink to="help">FAQ & Help</NavLink>
           <NavLink to="careers">Careers</NavLink>
+          <NavLink to="json">Destructuring</NavLink>
         </nav>
       </header>
       <main>
