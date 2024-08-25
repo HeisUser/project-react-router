@@ -7,9 +7,9 @@ Access & Handling Destructuring JSON Object in Basis, Nested-Basis & Nested-Comp
 
 
 ## Regarding Files at ./pages/destructuring/.. as
-- Handling the Basis to Nested-Complex **DestructuringJson_Theory.jsx**
-- Basic Handling via JSON-Server **DestructuringJson_Basic.jsx**
-- Complex Handling via JSON-Server **DestructuringJson_Nested.jsx**
+- Handling the Basis to Nested-Complex **_DestructuringJson_Theory.jsx_**
+- Basic Handling via JSON-Server **_DestructuringJson_Basic.jsx_**
+- Complex Handling via JSON-Server **_DestructuringJson_Nested.jsx_**
 
 
 ## Usage
@@ -25,8 +25,8 @@ Access & Handling Destructuring JSON Object in Basis, Nested-Basis & Nested-Comp
 #### $ json-server -p 4000 -w ./data/db.json
 
 # Endpoints:
-http://localhost:4000/careers_json_object
-http://localhost:4000/data_object
+- http://localhost:4000/careers_json_object
+- http://localhost:4000/data_object
 
 
 # Default Created of React Router v6
