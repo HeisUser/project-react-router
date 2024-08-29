@@ -22,6 +22,10 @@ import DestructuringJson_Basic, { careerLoader } from './pages/destructuring/Des
 import DestructuringJson_Nested, { tableLoader } from './pages/destructuring/DestructuringJson_nested';
 import DestructuringJson from './pages/destructuring/DestructuringJson_Theory';
 
+// Form Handling
+import SearchResult, { loaderSearch } from './pages/form/SearchResult';
+import SearchForm from './pages/form/SearchForm';
+
 
 // Define the router
 const router = createBrowserRouter([
@@ -88,6 +92,23 @@ const router = createBrowserRouter([
                         path: 'theory',
                         element: <DestructuringJson />,
                     }
+                ],
+            },
+
+            {
+                path: "form",    // Second Layer of Parent (Layout) with Children
+                element: <DesctructuringLayout />,
+                errorElement: <CareersError />, // errorElement can be replaced with Parent Layer
+                children: [
+                    {
+                        index: true,
+                        element: <SearchForm />,
+                    },
+                    {
+                        path: 'result/:searchQuery',
+                        element: <SearchResult />,
+                        loader: loaderSearch,
+                    },
                 ],
             },
             

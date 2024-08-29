@@ -21,6 +21,7 @@ export default function HomeLayout() {
           <NavLink to="help">FAQ & Help</NavLink>
           <NavLink to="careers">Careers</NavLink>
           <NavLink to="json">Destructuring</NavLink>
+          <NavLink to="form">SKU or ID Searching</NavLink>
         </nav>
       </header>
       <main>
