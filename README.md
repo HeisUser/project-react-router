@@ -3,21 +3,23 @@
 
 
 ## Learning Object
-Access & Handling Destructuring JSON Object in Basis, Nested-Basis & Nested-Complex
+Form Handling in A or B param on a same input field with Destructuring JSON Object in Nested-Complex.
 
 
-## Regarding Files at ./pages/destructuring/.. as
-- Handling the Basis to Nested-Complex **_DestructuringJson_Theory.jsx_**
-- Basic Handling via JSON-Server **_DestructuringJson_Basic.jsx_**
-- Complex Handling via JSON-Server **_DestructuringJson_Nested.jsx_**
+## Regarding Files at ./pages/form/.. as
+- Form Page Data (Param) Submission Handling **_SearchForm.jsx_**
+- Retrieve Result Component **_SearchResult.jsx_**
+- Redirect Component of Clicked-Button-Submission **_FormHandler.jsx_**
 
+## in use of React Hooks
+- useState, useParams, useLoaderData, useEffect, useNavigate
 
 ## Usage
 #### Route Definition of URL Link created at DataRoutes.jsx file
-- http://localhost:5174/json/theory
+- http://localhost:5173/form/result/:searchQuery
 
 
-## Github Link regard this Branch on Destructuring-JS-Object
+## Github Link regard this Branch on Form-Handling-AorB-SameField-JSON-Param
 - **SSH** ```git@github.com:HeisUser/project-react-router.git```
 - **HTTPS** https://github.com/HeisUser/project-react-router.git
 
@@ -25,7 +27,6 @@ Access & Handling Destructuring JSON Object in Basis, Nested-Basis & Nested-Comp
 #### $ json-server -p 4000 -w ./data/db.json
 
 # Endpoints:
-- http://localhost:4000/careers_json_object
 - http://localhost:4000/data_object
 
 
