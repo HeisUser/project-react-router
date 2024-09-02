@@ -1,18 +1,20 @@
 # Ways (Methods) of Routing in React Router v6
-#### Learning and Know how the Routing Methods and Param Route with JSON Server
+#### Learning and Know how the Routing Methods and Param Route with GraphQL
 
 
 ## Learning Object
-Form Handling in A or B param on a same input field with Destructuring JSON Object in Nested-Complex.
-
+- Form Handling in A or B param on a same input field in GraphQL with Destructuring JSON Object in Nested-Complex, at **client**.
+- Retrieve Data from **server** of Strapi with GraphQL methods. Strapi is the Data Control Panel in MySQL based.
 
 ## Regarding Files at ./pages/form/.. as
 - Form Page Data (Param) Submission Handling **_SearchForm.jsx_**
-- Retrieve Result Component **_SearchResult.jsx_**
+- Retrieve Result Component of Search **_SearchResult.jsx_**
 - Redirect Component of Clicked-Button-Submission **_FormHandler.jsx_**
+- Data Loader of Apollo Clientbe used at _DataRoutes.jsx_ **_ClientApollo.jsx_**
+- Query of GraphQL to determine retrieve result for _SearchResult.jsx_ file **_queries.jsx_**
 
 ## in use of React Hooks
-- useState, useParams, useLoaderData, useEffect, useNavigate
+- useState, useParams, useLoaderData, useEffect, useNavigate, useQuery, ApolloClient
 
 ## Usage
 #### Route Definition of URL Link created at DataRoutes.jsx file
@@ -23,11 +25,12 @@ Form Handling in A or B param on a same input field with Destructuring JSON Obje
 - **SSH** ```git@github.com:HeisUser/project-react-router.git```
 - **HTTPS** https://github.com/HeisUser/project-react-router.git
 
-## To Make Connection of JSON Server
-#### $ json-server -p 4000 -w ./data/db.json
+## Project Requirement as :
+- **client** with Apollo Client of GraphQL
+- **server** with Strapi in GraphQL Server and in MySQL based
 
-# Endpoints:
-- http://localhost:4000/data_object
+## GraphQL Endpoints:
+- http://localhost:1337/graphql
 
 
 # Default Created of React Router v6

@@ -11,13 +11,19 @@ import DataRoutes from './DataRoutes.jsx';
 
 
 
+
 createRoot(document.getElementById('root')).render(
-  <>
   <StrictMode>
-
-    <App />
-    <DataRoutes />  {/* Data Routes with createBrowserRouter */}
-
+      <App />
+      <DataRoutes />  {/* Data Routes with createBrowserRouter */}
   </StrictMode>
-  </>
-)
+);
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+// Apollo Client
+import { ApolloProvider } from '@apollo/client';
+
+// Loader Apollo Client
+import ClientApollo from './pages/formGQL/ClientApollo.jsx';
+
 // Layouts
 import HomeLayout from './OutletLayouts/HomeLayout';
 import HelpLayout from './OutletLayouts/HelpLayout';
@@ -15,7 +21,6 @@ import CareerDetails, { CareerDetailsLoader } from './pages/careers/CareerDetail
 import CareersError from './pages/careers/CareersError';
 import NotFoundPage from './pages/NotFound';
 
-
 // Destructuring Json Examples
 import DesctructuringLayout from './OutletLayouts/DestructuringLayout';
 import DestructuringJson_Basic, { careerLoader } from './pages/destructuring/DestructuringJson_Basic';
@@ -25,6 +30,10 @@ import DestructuringJson from './pages/destructuring/DestructuringJson_Theory';
 // Form Handling
 import SearchResult, { loaderSearch } from './pages/form/SearchResult';
 import SearchForm from './pages/form/SearchForm';
+
+// GQL Form Handling
+import SearchFormGQL from './pages/formGQL/SearchForm';
+import SearchResultGQL from './pages/formGQL/SearchResult';
 
 
 // Define the router
@@ -111,6 +120,21 @@ const router = createBrowserRouter([
                     },
                 ],
             },
+            {
+                path: "gql",    // Second Layer of Parent (Layout) with Children
+                element: <DesctructuringLayout />,
+                errorElement: <CareersError />, // errorElement can be replaced with Parent Layer
+                children: [
+                    {
+                        index: true,
+                        element: <SearchFormGQL />,
+                    },
+                    {
+                        path: 'result/:searchQuery',
+                        element: <SearchResultGQL />,
+                    },
+                ],
+            },
             
             {
                 path: "*",
@@ -122,6 +146,11 @@ const router = createBrowserRouter([
 
 export default function DataRoutes(){
     return (
-        <RouterProvider router={router} />
-    )
-};
+
+        <ApolloProvider client={ClientApollo}>
+
+          {/* Provide RouterProvider with the router instance */}
+          <RouterProvider router={router} />
+        </ApolloProvider>
+      );
+}
