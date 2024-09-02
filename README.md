@@ -21,7 +21,7 @@
 - http://localhost:5173/form/result/:searchQuery
 
 
-## Github Link regard this Branch on Form-Handling-AorB-SameField-JSON-Param
+## Github Link regard this Branch on Form-Handling-AorB-SameField-GraphQL-Param
 - **SSH** ```git@github.com:HeisUser/project-react-router.git```
 - **HTTPS** https://github.com/HeisUser/project-react-router.git
 
